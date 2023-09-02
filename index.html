@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap Tutorial</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Feuille de style CSS après Boostrap pour venir écraser si besoin le CSS de Boostrap -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- bootsnipp.com : communauté qui propose plusieurs éléments design -->
+    <!-- bootswatch.com : propose thèmes tout fait pour Boostrap -->
+    <!-- Boostrap permet de faciliter le responsive -->
+
+    <!-- container-fluid = prend toute la largeur de la page = sans marge != container -->
+    <div class="container-fluid red">
+        <!-- width = 960px -->
+        <div class="container">
+            <!-- boostrap comprend avec row que c'est une ligne -->
+            <div class="row">
+                <!-- md = medium donc écrans moyens -->
+                <!-- col-lg : pour les grands écrans -->
+                <!-- col-xs : pour les petits écrans -->
+                <!-- col-sm : écrans petits mais intermédiaires -->
+                <!-- md-12 : prend la taille de 12 colonnes donc si on veut 3 articles -> 12/3 = 4 donc 4 colonnes par articles -->
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <h2>Mon article</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora quae unde consectetur aliquid mollitia eligendi praesentium ipsum, reiciendis inventore exercitationem placeat culpa velit deserunt vel qui accusamus illo maxime!
+                    </p>
+                    <!-- getboostrap.com/css/#buttons -->
+                    <!-- possibilité de changer couleur bouton en fonction de son utilisation (ex: success = green) -->
+                    <button class="btn btn-success">Mon bouton</button>
+                </article>
+                <!-- col-xs-12 col-sm-12 col-md-4 col-lg-4 : permet un affichage pour différents écrans  -->
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <h2>Mon article 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora quae unde consectetur aliquid mollitia eligendi praesentium ipsum, reiciendis inventore exercitationem placeat culpa velit deserunt vel qui accusamus illo maxime!
+                    </p>
+                    <!-- Possibilité de customiser la class pour gérer le CSS -->
+                    <button class="btn btn-custom">Mon bouton</button>
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <h2>Mon article 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora quae unde consectetur aliquid mollitia eligendi praesentium ipsum, reiciendis inventore exercitationem placeat culpa velit deserunt vel qui accusamus illo maxime!
+                    </p>
+                </article>
+            </div>
+            <div class="row">
+                <!-- Possibilité de copier des morceaux de code depuis le site de Boostrap comme ci-dessous -->
+                <div class="jumbotron">
+                    <h1>Hello, world!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur obcaecati sed distinctio assumenda ducimus animi, sit quae, hic quas suscipit consectetur odit error est perspiciatis laborum beatae labore ipsam! Delectus.</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- importer du javascript depuis boostrap pour faire des animations -->
+    <!-- <script type="text/javascript" src="./js/boostrap.min.js">
+
+    </script> -->
+</body>
+</html>
